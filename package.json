@@ -1,0 +1,28 @@
+{
+  "name": "@vitest/example-react",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "test": "vitest --run",
+    "test:ui": "vitest --ui",
+    "build:pipeline": "./build-pipeline.sh",
+    "pipeline:test": "./pipeline-test.sh"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.2.79",
+    "@vitest/ui": "latest",
+    "jsdom": "^24.0.0",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  }
+}
