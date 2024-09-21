@@ -2,4 +2,4 @@
 
 # npm run pipeline:test
 npm i
-npm test
+npm run test:debug

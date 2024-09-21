@@ -5,6 +5,7 @@
   "scripts": {
     "coverage": "vitest run --coverage",
     "test": "vitest --run",
+    "test:debug": "vitest --run --logHeapUsage --reporter=verbose --reporter=hanging-process",
     "test:ui": "vitest --ui",
     "build:pipeline": "./build-pipeline.sh",
     "pipeline:test": "./pipeline-test.sh"
